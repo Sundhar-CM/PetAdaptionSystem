@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Adoption Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            padding-top: 56px;
+        }
+        .card {
+            margin-bottom: 20px;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 30px;
+        }
+        .stat-card {
+            flex: 1;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Pet Adoption</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Dashboard</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/Pets">Pets</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Adoptions</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Users</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="stats">
+        <div class="card stat-card text-center">
+            <div class="card-body">
+                <h5 class="card-title">Total Pets</h5>
+                <p class="card-text">150</p>
+            </div>
+        </div>
+        <div class="card stat-card text-center">
+            <div class="card-body">
+                <h5 class="card-title">Adopted Pets</h5>
+                <p class="card-text">120</p>
+            </div>
+        </div>
+        <div class="card stat-card text-center">
+            <div class="card-body">
+                <h5 class="card-title">Available Pets</h5>
+                <p class="card-text">30</p>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="my-4">Available Pets</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="/pet1.jpg" class="card-img-top" alt="Dog 1">
+                <div class="card-body">
+                    <h5 class="card-title">Buddy</h5>
+                    <p class="card-text">Age: 2 years<br>Breed: Labrador Retriever</p>
+                    <a href="#" class="btn btn-primary">Adopt</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="/pet2.jpg" class="card-img-top" alt="Cat 1">
+                <div class="card-body">
+                    <h5 class="card-title">Whiskers</h5>
+                    <p class="card-text">Age: 3 years<br>Breed: Siamese</p>
+                    <a href="#" class="btn btn-primary">Adopt</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="/pet3.jpg" class="card-img-top" alt="Dog 2">
+                <div class="card-body">
+                    <h5 class="card-title">Max</h5>
+                    <p class="card-text">Age: 1 year<br>Breed: Beagle</p>
+                    <a href="#" class="btn btn-primary">Adopt</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
